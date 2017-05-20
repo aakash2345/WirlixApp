@@ -8,7 +8,7 @@ Authenticate locally or through Facebook, Twitter or Google.
 ## Installation
 
 * ` git clone https://github.com/aakash2345/WirlixApp.git`
-* `cd express-authentication`
+* `cd Wirlix App`
 * `npm install`
 * Run Mongo instance in a new terminal window run `mongod`
 * `node app`
