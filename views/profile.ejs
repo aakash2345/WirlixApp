@@ -9,7 +9,7 @@
         <hr>
         <div class="jumbotron">
           <% if (user.local.email != null) { %>
-            <img src="https://avatars.io/gravatar/<%= user.local.email %>/140" class="img-circle"><br>
+            <img src="/public/welcome.jpg" alt="welcome image"><br>
             <strong>email</strong>: <%= user.local.email %><br>
           <% } %>
 
@@ -46,10 +46,10 @@
  	 	 			<form id="searchForm">
  	 	 				<div class="input-group">
  	 	 	 	 			<span class="input-group-addon"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></span>
- 	 	 	 	 			<input type="text" name="se" class="form-control" placeholder="Search for Youtube Videos" id="searchTerm" />
+ 	 	 	 	 			<input type="text" class="form-control" placeholder="Search for Youtube Videos" id="searchTerm" />
  	 	 	 	 		</div>
                         <br>
- 	 	 	 	 		<input type="submit" class="btn btn-success btn-sm marginTop" value="Search" />
+ 	 	 	 	 		<input type="button" class="btn btn-success btn-sm marginTop" value="Search" />
  	 	 			</form>	
  	 	 			<p align="center" id="results"></p>
 				</div>
@@ -57,5 +57,5 @@
  	 	
       </div>
     </div>
-    <script src="config/youtube.js"></script>
+    <script src="/config/youtube.js"></script>
   </body>

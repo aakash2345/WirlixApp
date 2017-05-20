@@ -2,7 +2,7 @@ function playmovie(movId){
 	window.open("https://www.youtube.com/watch?v="+movId);
 }
 
-$("#searchForm").submit(function(e){
+$("#searchForm").button(function(e){
 	e.preventDefault();
 	var searchTerm = $("#searchTerm").val();
 
