@@ -1,3 +1,5 @@
+var User = require('../config/youtube');
+
 function playmovie(movId) {
     window.open("https://www.youtube.com/watch?v=" + movId);
 }

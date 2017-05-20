@@ -10,6 +10,8 @@ var port = process.env.PORT || 3000;
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 
+//var youtube = require('youtube');
+
 var mongoose = require('mongoose');
 var flash = require('connect-flash');
 var session = require('express-session');
