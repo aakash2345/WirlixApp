@@ -1,4 +1,4 @@
-var User = require('../config/youtube');
+//var youtube = require('../config/youtube');
 
 function playmovie(movId) {
     window.open("https://www.youtube.com/watch?v=" + movId);
@@ -12,12 +12,14 @@ $("#searchForm").button(function(e) {
 
     $.getJSON(url, function(data) {
         var arrItems = data.items;
+        console.log('data.items');
         var html = '<table class="table table-bordered"><thead><tr><th>Thumbnail</th><th>Title</th><th>Link</th></tr></thead><tbody>';
         for (var i = 0; i < arrItems.length; i++) {
             html += '<tr><td><img src="' + arrItems[i].snippet.thumbnails.default.url + '"></td><td>' + arrItems[i].snippet.title + '</td><td><button type="button" class="btn btn-primary" onclick="playmovie(\'' + arrItems[i].id.videoId + '\')">Play Video</button></td></tr>';
         }
         html += "</tbody></table>";
         $("#results").html(html);
+        
     });
 
 });
